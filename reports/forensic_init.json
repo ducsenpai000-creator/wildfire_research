@@ -1,0 +1,42 @@
+﻿{
+ "fresh_kaiming_s": {
+  "spatial_adjacent_corr": -0.0641,
+  "rgb_channel_corr": -0.0494,
+  "std": 0.08305
+ },
+ "fresh_kaiming_m": {
+  "spatial_adjacent_corr": 0.0012,
+  "rgb_channel_corr": -0.0398,
+  "std": 0.05943
+ },
+ "fresh_kaiming_l": {
+  "spatial_adjacent_corr": -0.0009,
+  "rgb_channel_corr": 0.0041,
+  "std": 0.05763
+ },
+ "E0_ep44": {
+  "spatial_adjacent_corr": -0.0045,
+  "rgb_channel_corr": -0.0106,
+  "std": 0.08372
+ },
+ "official_S": {
+  "spatial_adjacent_corr": 0.4492,
+  "rgb_channel_corr": 0.4393,
+  "std": 0.20752
+ },
+ "official_S_LA": {
+  "spatial_adjacent_corr": 0.4491,
+  "rgb_channel_corr": 0.4399,
+  "std": 0.20751
+ },
+ "official_M": {
+  "spatial_adjacent_corr": 0.347,
+  "rgb_channel_corr": 0.5117,
+  "std": 0.15775
+ },
+ "official_L": {
+  "spatial_adjacent_corr": 0.4008,
+  "rgb_channel_corr": 0.4361,
+  "std": 0.14081
+ }
+}

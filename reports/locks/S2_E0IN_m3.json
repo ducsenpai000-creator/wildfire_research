@@ -1,0 +1,52 @@
+{
+ "lock_id": "S2_E0IN_m3",
+ "status": "LOCKED",
+ "created": "2026-10-18T09:35:37",
+ "project_commit": "63d687b6d93dacda1a876cd92dd7b44de0f3b32e-dirty",
+ "code_sha256": {
+  "evaluator_core": "786b8a13a1423f8e0bb7b9d3c8279db8c739a1eaa3c5196176b9487eebf8cddc",
+  "predictors": "2ec451e1793772b37a507c4506690bfdb6536ae5bbc54bae8d608c01349e586d",
+  "train_hf_model_defs": "7d090c4848f42f26e146b3a610e272cd0235f5b15be0af8f010d52746af78eaa",
+  "final_test_eval": "4c7ad60c22e4878e4ec9c716afda5ae57c27b7b87c13b191dfc2b19e617602e2",
+  "upstream_eval": "f954b4dcacc955320c86dad80e02bb39308fc945ca940fb1ed7060976eddaab8",
+  "upstream_dataset": "18c4b92039306347ff46429af40a3b4c71db0a519d20294a2d5d792db7d7508f",
+  "upstream_pidnet": "274aac0757578f606f8ace519ec5b48495012b5519283c75f2bbf434d34d9179",
+  "upstream_fullmodel": "0f667887de04afd60c2a8118a81d817ad97b3ff9dac4fc63f86ef5ebdbef99fa"
+ },
+ "models": [
+  {
+   "name": "E0IN_m3_primary_best_val_miou",
+   "size": "s",
+   "kind": "pidnet",
+   "checkpoint": "D:\\wildfire_research\\experiments\\E0IN_m3_P_pidnet_s_seed42\\checkpoints\\E0IN_m3_P_pidnet_s_seed42_miou.pt",
+   "sha256": "3de70e89ea245386a4b1d41e8de4a170a74a151cd947eb271bf4d8e17637c3be"
+  },
+  {
+   "name": "E0IN_m3_secondary_best_val_loss",
+   "size": "s",
+   "kind": "pidnet",
+   "checkpoint": "D:\\wildfire_research\\experiments\\E0IN_m3_P_pidnet_s_seed42\\checkpoints\\E0IN_m3_P_pidnet_s_seed42.pt",
+   "sha256": "a0d752a6270144def28e348ba17dd66478bccb48bca34bde2e8c75b268e2c229"
+  }
+ ],
+ "test_sets": {
+  "P_all": "D:\\wildfire_research\\data\\protocol_P",
+  "BFF": "D:\\wildfire_research\\data\\raw\\bff\\Boreal-Forest-Fire-Subset-C",
+  "AIFM": "D:\\wildfire_research\\data\\raw\\aifm\\data"
+ },
+ "manifests": {
+  "P": {
+   "path": "D:\\wildfire_research\\data\\manifests\\protocol_P_manifest.csv",
+   "sha256": "1e7a04238e4653aa93b0bcc618320a0c3f4c277d5315090d6773cd7f690e9708"
+  },
+  "B": {
+   "path": "D:\\wildfire_research\\data\\manifests\\protocol_B_manifest.csv",
+   "sha256": "b3dacb00c77712c35b646a264c3d6c4c966bab0f6ee5c7beb58ac1f7a4d55d9c"
+  }
+ },
+ "eval_sam_pseudo_labels": false,
+ "threshold": 0.5,
+ "reporting": "aggregate metrics only (upstream eval() numbers are official; independent re-implementation reported as cross-check)",
+ "note": "PIDNet-S baseline under the 5 GB budget (micro-batch 3); pre-registered checkpoints",
+ "missing_models_not_evaluated": []
+}

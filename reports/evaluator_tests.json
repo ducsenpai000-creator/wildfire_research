@@ -1,0 +1,39 @@
+﻿{
+ "synthetic": {
+  "n_cases": 200,
+  "max_abs_diff_vs_torchmetrics_torcheval": {
+   "iou": 1.2570850471682604e-08,
+   "precision": 2.80492445936531e-08,
+   "recall": 2.781550090258378e-08,
+   "f1": 5.0957936148510186e-08,
+   "accuracy": 2.9665544798440635e-08
+  },
+  "pass": true
+ },
+ "validation_agreement": {
+  "n_images": 120,
+  "upstream": {
+   "mean_iou": 0.5474529327271739,
+   "mean_rand": 0.9775042121609052,
+   "mean_precision": 0.6555942061667641,
+   "mean_recall": 0.584910318106995,
+   "mean_f1": 0.5894851653215786
+  },
+  "independent": {
+   "mean_iou": 0.5474529336095292,
+   "mean_precision": 0.6555942069064506,
+   "mean_recall": 0.5849103200426704,
+   "mean_f1": 0.5894851628618623,
+   "mean_accuracy": 0.9775042156957305
+  },
+  "abs_diff": {
+   "iou": 8.823552999359663e-10,
+   "precision": 7.396865342457204e-10,
+   "recall": 1.935675397746195e-09,
+   "f1": 2.459716319513916e-09,
+   "accuracy": 3.5348253213385306e-09
+  },
+  "pass": true,
+  "note": "GT = SAM pseudo-labels of the validation split"
+ }
+}

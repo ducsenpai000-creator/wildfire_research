@@ -1,0 +1,7 @@
+﻿experiment,seed,br_rho,rc_lambda,aux,micro_batch,epochs_done,best_val_batch_mIoU,best_val_epoch,status,test_P_all_primary_mIoU,test_P_all_primary_recall,test_lock_primary,test_BFF_primary_mIoU,test_AIFM_primary_mIoU,test_P_all_secondary_mIoU,test_P_all_secondary_recall,test_lock_secondary,test_BFF_secondary_mIoU,test_AIFM_secondary_mIoU
+BRRC_E1a_rho0.10_P_pidnet_s_seed42,42,0.1,0.0,none,3,50,0.5065,46,DONE,,,,,,,,,,
+BRRC_E1b_rho0.25_P_pidnet_s_seed42,42,0.25,0.0,none,3,50,0.5203,40,DONE,,,,,,,,,,
+BRRC_E2a_lam1_P_pidnet_s_seed42,42,0.0,1.0,none,3,50,0.5532,27,DONE,,,,,,,,,,
+BRRC_E2b_lam5_P_pidnet_s_seed42,42,0.0,5.0,none,3,50,0.5867,25,DONE,,,,,,,,,,
+DSA_m3_P_pidnet_s_seed42,42,0.0,0.0,dsa,3,50,0.5421,26,DONE,0.5944,0.6661,S2_DSA_m3,0.6931,0.4958,0.6017,0.6657,S2_DSA_m3,0.7121,0.4914
+E0IN_m3_P_pidnet_s_seed42,42,0,0,none,3,50,0.5269,32,DONE,0.5837,0.6326,S2_E0IN_m3,0.6653,0.5022,0.5414,0.5865,S2_E0IN_m3,0.7208,0.3621

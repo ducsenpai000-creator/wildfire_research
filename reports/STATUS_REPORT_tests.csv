@@ -1,0 +1,46 @@
+﻿lock,test_set,model,n_images,mIoU,accuracy,precision,recall,f1,paper_mIoU_PIDNet_S
+S1a_official_v2,P_all,SAM_pseudo_labels,80,0.636,0.9581,0.9122,0.6929,0.7541,0.594
+S1a_official_v2,P_all,official_sam_sup_pidnet_s,80,0.5939,0.9602,0.8909,0.6445,0.7072,0.594
+S1a_official_v2,P_all,official_sam_sup_pidnet_m,80,0.6059,0.9603,0.884,0.6662,0.7213,0.594
+S1a_official_v2,P_all,official_sam_sup_pidnet_l,80,0.5943,0.9563,0.8088,0.6985,0.7112,0.594
+S1a_official_v2,P_all,official_loss_ablation_pidnet_s,80,0.6326,0.9649,0.9112,0.6886,0.7442,0.594
+S1a_official_v2,BFF,SAM_pseudo_labels,40,0.6459,0.9209,0.9807,0.6592,0.7639,0.689
+S1a_official_v2,BFF,official_sam_sup_pidnet_s,40,0.6895,0.9299,0.9841,0.6984,0.8016,0.689
+S1a_official_v2,BFF,official_sam_sup_pidnet_m,40,0.69,0.9296,0.9882,0.6972,0.8011,0.689
+S1a_official_v2,BFF,official_sam_sup_pidnet_l,40,0.7069,0.9222,0.9496,0.7425,0.8161,0.689
+S1a_official_v2,BFF,official_loss_ablation_pidnet_s,40,0.7247,0.9383,0.9838,0.7345,0.8284,0.689
+S1a_official_v2,AIFM,SAM_pseudo_labels,40,0.6261,0.9953,0.8437,0.7266,0.7442,0.498
+S1a_official_v2,AIFM,official_sam_sup_pidnet_s,40,0.4984,0.9905,0.7976,0.5906,0.6128,0.498
+S1a_official_v2,AIFM,official_sam_sup_pidnet_m,40,0.5217,0.9911,0.7799,0.6352,0.6415,0.498
+S1a_official_v2,AIFM,official_sam_sup_pidnet_l,40,0.4817,0.9904,0.6681,0.6545,0.6064,0.498
+S1a_official_v2,AIFM,official_loss_ablation_pidnet_s,40,0.5404,0.9916,0.8385,0.6427,0.66,0.498
+S1b_E0_v2,P_all,E0_primary_best_val_miou_ep44,80,0.4743,0.9656,0.678,0.5235,0.5609,0.594
+S1b_E0_v2,P_all,E0_secondary_best_val_loss_ep48,80,0.4358,0.9637,0.6514,0.4769,0.5116,0.594
+S1b_E0_v2,BFF,E0_primary_best_val_miou_ep44,40,0.7381,0.9426,0.9439,0.7724,0.8376,0.689
+S1b_E0_v2,BFF,E0_secondary_best_val_loss_ep48,40,0.7304,0.9412,0.9244,0.7724,0.829,0.689
+S1b_E0_v2,AIFM,E0_primary_best_val_miou_ep44,40,0.2105,0.9886,0.4122,0.2747,0.2841,0.498
+S1b_E0_v2,AIFM,E0_secondary_best_val_loss_ep48,40,0.1412,0.9862,0.3783,0.1814,0.1941,0.498
+S1c_E0IN,P_all,E0IN_primary_best_val_miou,80,0.6077,0.96,0.8769,0.656,0.7191,0.594
+S1c_E0IN,P_all,E0IN_secondary_best_val_loss,80,0.5925,0.963,0.8591,0.6263,0.6989,0.594
+S1c_E0IN,BFF,E0IN_primary_best_val_miou,40,0.6974,0.9283,0.9613,0.725,0.8072,0.689
+S1c_E0IN,BFF,E0IN_secondary_best_val_loss,40,0.719,0.9351,0.9668,0.7359,0.824,0.689
+S1c_E0IN,AIFM,E0IN_primary_best_val_miou,40,0.518,0.9917,0.7925,0.587,0.6309,0.498
+S1c_E0IN,AIFM,E0IN_secondary_best_val_loss,40,0.4661,0.9908,0.7514,0.5168,0.5739,0.498
+S2_DSA_m3,P_all,DSA_m3_primary_best_val_miou,80,0.5944,0.9614,0.8288,0.6661,0.7057,0.594
+S2_DSA_m3,P_all,DSA_m3_secondary_best_val_loss,80,0.6017,0.9591,0.8181,0.6657,0.7071,0.594
+S2_DSA_m3,BFF,DSA_m3_primary_best_val_miou,40,0.6931,0.9308,0.9532,0.7189,0.8014,0.689
+S2_DSA_m3,BFF,DSA_m3_secondary_best_val_loss,40,0.7121,0.927,0.9258,0.7622,0.819,0.689
+S2_DSA_m3,AIFM,DSA_m3_primary_best_val_miou,40,0.4958,0.9921,0.7044,0.6132,0.6099,0.498
+S2_DSA_m3,AIFM,DSA_m3_secondary_best_val_loss,40,0.4914,0.9913,0.7103,0.5692,0.5951,0.498
+S2_E0IN_m3,P_all,E0IN_m3_primary_best_val_miou,80,0.5837,0.9587,0.8505,0.6326,0.6975,0.594
+S2_E0IN_m3,P_all,E0IN_m3_secondary_best_val_loss,80,0.5414,0.9633,0.7868,0.5865,0.6431,0.594
+S2_E0IN_m3,BFF,E0IN_m3_primary_best_val_miou,40,0.6653,0.9248,0.9731,0.6772,0.7816,0.689
+S2_E0IN_m3,BFF,E0IN_m3_secondary_best_val_loss,40,0.7208,0.9366,0.9604,0.7455,0.8241,0.689
+S2_E0IN_m3,AIFM,E0IN_m3_primary_best_val_miou,40,0.5022,0.9926,0.728,0.588,0.6133,0.498
+S2_E0IN_m3,AIFM,E0IN_m3_secondary_best_val_loss,40,0.3621,0.9899,0.6133,0.4275,0.462,0.498
+S2_Mask2FormerSwinT,P_all,Mask2FormerSwinT_best_val_iou @thr 0.5,80,0.5713,0.9602,0.8504,0.6039,0.6743,0.594
+S2_Mask2FormerSwinT,BFF,Mask2FormerSwinT_best_val_iou @thr 0.5,40,0.6942,0.9294,0.9747,0.7111,0.8012,0.689
+S2_Mask2FormerSwinT,AIFM,Mask2FormerSwinT_best_val_iou @thr 0.5,40,0.4483,0.991,0.7262,0.4967,0.5474,0.498
+S2_SegFormerB2,P_all,SegFormerB2_best_val_iou @thr 0.5,80,0.4853,0.9592,0.811,0.5223,0.59,0.594
+S2_SegFormerB2,BFF,SegFormerB2_best_val_iou @thr 0.5,40,0.6725,0.9286,0.9865,0.6798,0.7826,0.689
+S2_SegFormerB2,AIFM,SegFormerB2_best_val_iou @thr 0.5,40,0.2981,0.9898,0.6355,0.3647,0.3975,0.498

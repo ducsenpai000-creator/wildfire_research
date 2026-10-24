@@ -1,0 +1,31 @@
+{
+  "experiment_id": "E0-IN",
+  "protocol": "P",
+  "entry_point": "research_extension/repro/train_repro.py (via run_with_resume.ps1)",
+  "registered_in": "reports/PROTOCOL_LOCK.md, version 2 (before any test evaluation)",
+  "args": {
+    "exp": "E0IN_P_pidnet_s_seed42",
+    "protocol": "P",
+    "data_dir": "D:/wildfire_research/data/protocol_P",
+    "manifest": "D:/wildfire_research/data/manifests/protocol_P_manifest.csv",
+    "model_size": "s",
+    "init_imagenet": "D:/wildfire_research/checkpoints/pidnet_imagenet_converted/PIDNet_S_ImageNet_official_keys.pt",
+    "init_imagenet_source": "https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/pidnet/pidnet-s_imagenet1k_20230306-715e6273.pth (key names restored by research_extension/repro/convert_mmseg_pidnet_imagenet.py)",
+    "init_imagenet_sha256": "d25c0323f11dd2b021cbdd3e3206c9e3978344072614b6748a263d838c932231",
+    "lr": 1e-4,
+    "weight_decay": 1e-2,
+    "pos_weight": 2.5,
+    "epochs": 50,
+    "batch_size": 16,
+    "micro_batch": 4,
+    "num_workers": 3,
+    "val_num_workers": 2,
+    "prefetch_factor": 1,
+    "seed": 42
+  },
+  "checkpoint_rules": {
+    "primary": "best validation batch-mIoU (paper) -> <exp>_miou.pt",
+    "secondary": "lowest validation l1 loss (released eval.py) -> <exp>.pt"
+  },
+  "upstream_commit": "2382c295ff3e6185d9b3ae82cfb200f8d23d8fa6"
+}

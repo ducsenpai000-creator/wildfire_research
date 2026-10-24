@@ -1,0 +1,63 @@
+{
+ "lock_id": "S2_Mask2FormerSwinT",
+ "lock_sha256": "c3a12ccf9b13ed9347cdb3f1bacaa0e2b053508180e76abf6b45bb5866b955c2",
+ "project_commit": "f76e56fdcd658317e7d2547a994d3a3c01e48066-dirty",
+ "evaluated": "2026-10-24T04:30:07",
+ "threshold": 0.5,
+ "datasets": {
+  "P_all": {
+   "n_images": 80,
+   "models": {
+    "Mask2FormerSwinT_best_val_iou": {
+     "n_images": 80,
+     "by_threshold": {
+      "0.5": {
+       "mean_iou": 0.5712838215663695,
+       "mean_precision": 0.8504428015998169,
+       "mean_recall": 0.6038788095698782,
+       "mean_f1": 0.6742991908222058,
+       "mean_accuracy": 0.9601664797935957
+      }
+     },
+     "n_trainable_params": 47401340
+    }
+   }
+  },
+  "BFF": {
+   "n_images": 40,
+   "models": {
+    "Mask2FormerSwinT_best_val_iou": {
+     "n_images": 40,
+     "by_threshold": {
+      "0.5": {
+       "mean_iou": 0.6942484268301075,
+       "mean_precision": 0.9746601625583244,
+       "mean_recall": 0.711056606956172,
+       "mean_f1": 0.8011563317063513,
+       "mean_accuracy": 0.9293526716820988
+      }
+     },
+     "n_trainable_params": 47401340
+    }
+   }
+  },
+  "AIFM": {
+   "n_images": 40,
+   "models": {
+    "Mask2FormerSwinT_best_val_iou": {
+     "n_images": 40,
+     "by_threshold": {
+      "0.5": {
+       "mean_iou": 0.4483192163026314,
+       "mean_precision": 0.7262254406413093,
+       "mean_recall": 0.4967010121835843,
+       "mean_f1": 0.5474420499380604,
+       "mean_accuracy": 0.9909802879050925
+      }
+     },
+     "n_trainable_params": 47401340
+    }
+   }
+  }
+ }
+}

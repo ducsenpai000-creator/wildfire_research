@@ -1,0 +1,57 @@
+﻿{
+ "E0_ep44": {
+  "value": 0.9906980991363525,
+  "lr0.0001_exact_steps": [
+   9180
+  ],
+  "lr0.0001_steps/204": [
+   45.0
+  ],
+  "lr0.001_exact_steps": [],
+  "lr0.001_steps/204": []
+ },
+ "E0_ep48": {
+  "value": 0.9898712635040283,
+  "lr0.0001_exact_steps": [
+   9996
+  ],
+  "lr0.0001_steps/204": [
+   49.0
+  ],
+  "lr0.001_exact_steps": [],
+  "lr0.001_steps/204": []
+ },
+ "official_S": {
+  "value": 0.992351770401001,
+  "lr0.0001_exact_steps": [
+   7548
+  ],
+  "lr0.0001_steps/204": [
+   37.0
+  ],
+  "lr0.001_exact_steps": [],
+  "lr0.001_steps/204": []
+ },
+ "official_M": {
+  "value": 0.9896645545959473,
+  "lr0.0001_exact_steps": [
+   10200
+  ],
+  "lr0.0001_steps/204": [
+   50.0
+  ],
+  "lr0.001_exact_steps": [],
+  "lr0.001_steps/204": []
+ },
+ "official_L": {
+  "value": 0.9956591129302979,
+  "lr0.0001_exact_steps": [
+   4284
+  ],
+  "lr0.0001_steps/204": [
+   21.0
+  ],
+  "lr0.001_exact_steps": [],
+  "lr0.001_steps/204": []
+ }
+}

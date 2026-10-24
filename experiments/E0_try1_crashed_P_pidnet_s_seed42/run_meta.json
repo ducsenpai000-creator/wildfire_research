@@ -1,0 +1,32 @@
+{
+ "argv": {
+  "exp": "E0_P_pidnet_s_seed42",
+  "protocol": "P",
+  "data_dir": "D:\\wildfire_research\\data\\protocol_P",
+  "manifest": "D:\\wildfire_research\\data\\manifests\\protocol_P_manifest.csv",
+  "model_size": "s",
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "pos_weight": 2.5,
+  "epochs": 50,
+  "batch_size": 16,
+  "micro_batch": 4,
+  "num_workers": 6,
+  "prefetch_factor": 1,
+  "seed": 42,
+  "max_train_batches": 0,
+  "max_val_batches": 0,
+  "out_root": "D:\\wildfire_research\\experiments"
+ },
+ "repo_commit": "2382c295ff3e6185d9b3ae82cfb200f8d23d8fa6",
+ "project_commit": "8a631daad1cddcc4794685dc9500299a534aac07-dirty",
+ "manifest_sha256": "1e7a04238e4653aa93b0bcc618320a0c3f4c277d5315090d6773cd7f690e9708",
+ "n_train": 3252,
+ "n_valid": 701,
+ "torch": "2.4.1+cu118",
+ "cuda": "11.8",
+ "cudnn": 90100,
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "started": "2026-10-11T23:47:09",
+ "config_sha256": "351706c2057243e7a2d46ff475ad7f880f118ad5287929c40ba0d77567aae444"
+}

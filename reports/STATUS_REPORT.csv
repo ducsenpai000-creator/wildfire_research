@@ -1,0 +1,13 @@
+﻿experiment,method,role,status,epochs_done,epochs_total,best_val_metric,best_val_epoch,val_metric_name,train_hours,n_crashes,n_paused_or_killed,n_launch_errors,n_resumes,last_crash_or_note,test_lock
+BRRC_E1a_rho0.10_P_pidnet_s_seed42,"BRRC E1a: boundary reliability, rho=0.10",Giai đoạn 2 - lưới BRRC,DONE,50,50,0.5065,46,val_iou,5.171,0,3,0,4,,FINAL_BRRC
+BRRC_E1b_rho0.25_P_pidnet_s_seed42,"BRRC E1b: boundary reliability, rho=0.25",Giai đoạn 2 - lưới BRRC,DONE,50,50,0.5203,40,val_iou,6.059,0,3,0,4,,FINAL_BRRC
+BRRC_E2a_lam1_P_pidnet_s_seed42,"BRRC E2a: Tversky recall (a=0.3,b=0.7), lambda=1",Giai đoạn 2 - lưới BRRC,DONE,50,50,0.5532,27,val_iou,0.598,0,6,0,7,,FINAL_BRRC
+BRRC_E2b_lam5_P_pidnet_s_seed42,"BRRC E2b: Tversky recall (a=0.3,b=0.7), lambda=5",Giai đoạn 2 - lưới BRRC,DONE,50,50,0.5867,25,val_iou,1.103,0,2,0,3,,FINAL_BRRC
+DSA_m3_P_pidnet_s_seed42,"DSA (ECCV 2024, cài đặt lại) trên PIDNet-S",phương pháp so sánh,DONE,50,50,0.5421,26,val_iou,2.643,0,2,0,3,,S2_DSA_m3
+E0_P_pidnet_s_seed42,"PIDNet-S teacher-student (WACV 2025), code phát hành (không ImageNet)",Giai đoạn 1 - tái thực nghiệm nguyên code,DONE,50,50,0.3764,44,val_iou,9.286,0,0,4,5,attempts 0-2 of this launch failed in argparse (argument passing bug in launcher); no training step executed; state untouched,S1b_E0_v2
+E0_try1_crashed_P_pidnet_s_seed42,"PIDNet-S teacher-student (WACV 2025), code phát hành",lần chạy lỗi (hết bộ nhớ ảo) - chỉ lưu vết,"CRASHED (bá», Ä‘Ã£ cháº¡y láº¡i)",1,50,0.2167,0,val_iou,0.34,0,0,0,0,,
+E0IN_m3_P_pidnet_s_seed42,"PIDNet-S (như E0-IN), micro-batch 3 (giới hạn 5 GB)",baseline so sánh dưới ràng buộc 5 GB,DONE,50,50,0.5269,32,val_iou,2.016,0,2,0,3,,S2_E0IN_m3
+E0IN_P_pidnet_s_seed42,PIDNet-S teacher-student (WACV 2025) + khởi tạo ImageNet như tác giả,Giai đoạn 1 - tái thực nghiệm chính,DONE,50,50,0.5247,39,val_iou,1.549,1,0,0,3,"user approved finishing E0-IN at current config (~5.2 GB VRAM, slightly above the 5 GB budget) while the GPU is otherwise idle; future runs capped at <=5 GB",S1c_E0IN
+FoSp_P_seed2077,"FoSp (AAAI 2024, code chính thức)",phương pháp so sánh,INCOMPLETE,12,40,0.5801,15,mf_beta,0.0,0,2,0,0,,S2_FoSp
+Mask2FormerSwinT_P_seed42,Mask2Former Swin-T (công thức MultiNatSmoke),phương pháp so sánh,DONE,20,20,0.5774,18,val_iou,3.559,0,4,0,5,,S2_Mask2FormerSwinT
+SegFormerB2_P_seed42,SegFormer-B2 (công thức MultiNatSmoke WACV 2026),phương pháp so sánh,DONE,20,20,0.5302,6,val_iou,3.693,0,0,0,1,,S2_SegFormerB2

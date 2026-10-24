@@ -1,0 +1,32 @@
+{
+ "argv": {
+  "exp": "Mask2FormerSwinT_P_seed42",
+  "model": "mask2former",
+  "pretrained": "facebook/mask2former-swin-tiny-ade-semantic",
+  "data_dir": "D:/wildfire_research/data/protocol_P",
+  "manifest": "D:/wildfire_research/data/manifests/protocol_P_manifest.csv",
+  "epochs": 20,
+  "batch_size": 32,
+  "micro_batch": 2,
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "num_workers": 2,
+  "max_vram_gb": 5.0,
+  "cpu_threads": 2,
+  "resume": true,
+  "max_train_batches": 0,
+  "max_val_batches": 0,
+  "out_root": "D:\\wildfire_research\\experiments"
+ },
+ "project_commit": "f2f1b64d8f7c3b27615b68f3b05b637a47e1ca0d-dirty",
+ "manifest_sha256": "1e7a04238e4653aa93b0bcc618320a0c3f4c277d5315090d6773cd7f690e9708",
+ "n_train": 3252,
+ "n_valid": 701,
+ "torch": "2.4.1+cu118",
+ "transformers": "4.46.3",
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "n_params": 47401340,
+ "started": "2026-10-23T20:51:06",
+ "config_sha256": "5120018ac36c572410f641abde26948facab21432ea71fc5ef28314effb75f45"
+}

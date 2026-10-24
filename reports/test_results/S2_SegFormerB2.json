@@ -1,0 +1,63 @@
+{
+ "lock_id": "S2_SegFormerB2",
+ "lock_sha256": "a115ef949446e53e513038480f64cbf0e1a7f345b4ad9c7b5a8635da12d2d2f0",
+ "project_commit": "d0d669c1f71b63c7728797769442f7f28558e844-dirty",
+ "evaluated": "2026-10-18T13:18:45",
+ "threshold": 0.5,
+ "datasets": {
+  "P_all": {
+   "n_images": 80,
+   "models": {
+    "SegFormerB2_best_val_iou": {
+     "n_images": 80,
+     "by_threshold": {
+      "0.5": {
+       "mean_iou": 0.4852800972991784,
+       "mean_precision": 0.8110199225374461,
+       "mean_recall": 0.5222766472009844,
+       "mean_f1": 0.5900171540905473,
+       "mean_accuracy": 0.9591748589409722
+      }
+     },
+     "n_trainable_params": 27347393
+    }
+   }
+  },
+  "BFF": {
+   "n_images": 40,
+   "models": {
+    "SegFormerB2_best_val_iou": {
+     "n_images": 40,
+     "by_threshold": {
+      "0.5": {
+       "mean_iou": 0.672472523219627,
+       "mean_precision": 0.9865068417921332,
+       "mean_recall": 0.6798255433078466,
+       "mean_f1": 0.7825818982224874,
+       "mean_accuracy": 0.928564525462963
+      }
+     },
+     "n_trainable_params": 27347393
+    }
+   }
+  },
+  "AIFM": {
+   "n_images": 40,
+   "models": {
+    "SegFormerB2_best_val_iou": {
+     "n_images": 40,
+     "by_threshold": {
+      "0.5": {
+       "mean_iou": 0.2980876713787299,
+       "mean_precision": 0.6355330032827593,
+       "mean_recall": 0.3647277510941223,
+       "mean_f1": 0.39745240995860737,
+       "mean_accuracy": 0.9897851924189816
+      }
+     },
+     "n_trainable_params": 27347393
+    }
+   }
+  }
+ }
+}

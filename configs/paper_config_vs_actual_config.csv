@@ -1,0 +1,21 @@
+item,paper_text,released_code_HEAD_2382c29,E0_actual,deviation_from_paper,deviation_from_code,reason
+model,PIDNet-S,PIDNet-S (num_classes=1),PIDNet-S,no,no,
+init,ImageNet pretrained,random Kaiming (pretrained load under `if False`),random Kaiming,YES,no,PIDNet ImageNet weights unreachable; released code does not load them
+optimizer,AdamW,AdamW,AdamW,no,no,
+learning_rate,1e-3,1e-4,1e-4,YES,no,E0 follows released code; paper lr run registered as E0-lr3
+weight_decay,1e-2,1e-2 (AdamW default),1e-2,no,no,
+scheduler,not stated,none,none,n/a,no,
+epochs,50,50,50,no,no,
+batch_size,16,16,16 logical = 4 x micro-batch 4 (grad accumulation),partial,partial,6 GB VRAM (fp32 bs4=4.82 GiB; bs8=9.5 GiB); BatchNorm stats over 4 samples
+input_resolution,1080x1920,resize to 1080x1920,1080x1920,no,no,
+precision,not stated,fp32,fp32,n/a,no,
+loss_weights,l0 0.4 / l1 20 / l2 1 / l3 1 / t 0.8,same,same,no,no,
+bce_pos_weight,not stated,2.5,2.5,YES (undocumented),no,
+boundary_loss_l2,Gated-SCNN weighted BCE,identically 0 (target scaled to 1/255),identically 0 (unchanged),YES (effective),no,released-code behaviour kept for faithful reproduction
+augmentation,TrivialAugment-like incl. crop,uniform over 12 options; crop never applied,same as code,partial,no,
+seed,not stated,numpy 42,numpy 42 + torch 42 + random 42,n/a,minor,traceability
+checkpoint_selection,best val mIoU,eval.py loads best val loss (exp.pt),both saved; primary best val mIoU; secondary best val loss,no (primary),partial,pre-registered
+val_metric_semantics,mIoU,BinaryJaccardIndex over a whole batch of 16; empty batch->1,identical (val batch 16),n/a,no,
+dataloader_workers,n/a,8,6 (prefetch 1),n/a,minor,15 GB RAM
+framework,not stated (Python 3.8),Python 3.8; unpinned requirements,Python 3.8.20; torch 2.4.1+cu118; torchvision 0.19.1; torchmetrics 1.5.2; torcheval 0.0.7; opencv 4.10.0.84,n/a,versions unknown upstream,
+hardware,not stated for training (Jetson Orin NX for inference),n/a,RTX 3050 Laptop 6 GB / Ryzen 7 7840HS / Windows 11,n/a,n/a,

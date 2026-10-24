@@ -1,0 +1,26 @@
+{
+  "experiment_id": "E0",
+  "protocol": "P",
+  "entry_point": "research_extension/repro/train_repro.py",
+  "args": {
+    "exp": "E0_P_pidnet_s_seed42",
+    "protocol": "P",
+    "data_dir": "D:/wildfire_research/data/protocol_P",
+    "manifest": "D:/wildfire_research/data/manifests/protocol_P_manifest.csv",
+    "model_size": "s",
+    "lr": 1e-4,
+    "weight_decay": 1e-2,
+    "pos_weight": 2.5,
+    "epochs": 50,
+    "batch_size": 16,
+    "micro_batch": 4,
+    "num_workers": 6,
+    "prefetch_factor": 1,
+    "seed": 42
+  },
+  "checkpoint_rules": {
+    "primary": "best validation batch-mIoU (paper) -> <exp>_miou.pt",
+    "secondary": "lowest validation l1 loss (released eval.py) -> <exp>.pt"
+  },
+  "upstream_commit": "2382c295ff3e6185d9b3ae82cfb200f8d23d8fa6"
+}

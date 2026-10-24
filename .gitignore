@@ -1,0 +1,11 @@
+# datasets, checkpoints, environments and third-party code are not distributed here
+data/
+envs/
+checkpoints/
+third_party/
+experiments/**/*.pt
+experiments/**/*.pth
+*.pt
+*.pth
+__pycache__/
+*.pyc

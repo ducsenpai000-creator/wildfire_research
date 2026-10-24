@@ -1,0 +1,104 @@
+{
+ "E0_try1_crashed_P_pidnet_s_seed42": {
+  "method": "PIDNet-S teacher-student (WACV 2025), code phát hành",
+  "role": "lần chạy lỗi (hết bộ nhớ ảo) - chỉ lưu vết",
+  "epochs": 50
+ },
+ "E0_P_pidnet_s_seed42": {
+  "method": "PIDNet-S teacher-student (WACV 2025), code phát hành (không ImageNet)",
+  "role": "Giai đoạn 1 - tái thực nghiệm nguyên code",
+  "epochs": 50,
+  "test_lock": "S1b_E0_v2"
+ },
+ "E0IN_P_pidnet_s_seed42": {
+  "method": "PIDNet-S teacher-student (WACV 2025) + khởi tạo ImageNet như tác giả",
+  "role": "Giai đoạn 1 - tái thực nghiệm chính",
+  "epochs": 50,
+  "test_lock": "S1c_E0IN"
+ },
+ "E0IN_m3_P_pidnet_s_seed42": {
+  "method": "PIDNet-S (như E0-IN), micro-batch 3 (giới hạn 5 GB)",
+  "role": "baseline so sánh dưới ràng buộc 5 GB",
+  "epochs": 50,
+  "test_lock": "S2_E0IN_m3"
+ },
+ "SegFormerB2_P_seed42": {
+  "method": "SegFormer-B2 (công thức MultiNatSmoke WACV 2026)",
+  "role": "phương pháp so sánh",
+  "epochs": 20,
+  "test_lock": "S2_SegFormerB2"
+ },
+ "DSA_m3_P_pidnet_s_seed42": {
+  "method": "DSA (ECCV 2024, cài đặt lại) trên PIDNet-S",
+  "role": "phương pháp so sánh",
+  "epochs": 50,
+  "test_lock": "S2_DSA_m3"
+ },
+ "Mask2FormerSwinT_P_seed42": {
+  "method": "Mask2Former Swin-T (công thức MultiNatSmoke)",
+  "role": "phương pháp so sánh",
+  "epochs": 20,
+  "test_lock": "S2_Mask2FormerSwinT"
+ },
+ "FoSp_P_seed2077": {
+  "method": "FoSp (AAAI 2024, code chính thức)",
+  "role": "phương pháp so sánh",
+  "epochs": 40,
+  "val_key": "mf_beta",
+  "test_lock": "S2_FoSp"
+ },
+ "BRRC_E1a_rho0.10_P_pidnet_s_seed42": {
+  "method": "BRRC E1a: boundary reliability, rho=0.10",
+  "role": "Giai đoạn 2 - lưới BRRC",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "BRRC_E1b_rho0.25_P_pidnet_s_seed42": {
+  "method": "BRRC E1b: boundary reliability, rho=0.25",
+  "role": "Giai đoạn 2 - lưới BRRC",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "BRRC_E2a_lam1_P_pidnet_s_seed42": {
+  "method": "BRRC E2a: Tversky recall (a=0.3,b=0.7), lambda=1",
+  "role": "Giai đoạn 2 - lưới BRRC",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "BRRC_E2b_lam5_P_pidnet_s_seed42": {
+  "method": "BRRC E2b: Tversky recall (a=0.3,b=0.7), lambda=5",
+  "role": "Giai đoạn 2 - lưới BRRC",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "BRRC_E3_best_P_pidnet_s_seed42": {
+  "method": "BRRC E3: rho* + lambda* (chọn theo val)",
+  "role": "Giai đoạn 2 - BRRC đầy đủ",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "E0IN_m3_P_pidnet_s_seed7": {
+  "method": "PIDNet-S baseline (5 GB), seed 7",
+  "role": "Giai đoạn 2 - nhiễu theo seed",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "E0IN_m3_P_pidnet_s_seed2026": {
+  "method": "PIDNet-S baseline (5 GB), seed 2026",
+  "role": "Giai đoạn 2 - nhiễu theo seed",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "BRRC_best_P_pidnet_s_seed7": {
+  "method": "BRRC tốt nhất (chọn theo val), seed 7",
+  "role": "Giai đoạn 2 - nhiễu theo seed",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ },
+ "BRRC_best_P_pidnet_s_seed2026": {
+  "method": "BRRC tốt nhất (chọn theo val), seed 2026",
+  "role": "Giai đoạn 2 - nhiễu theo seed",
+  "epochs": 50,
+  "test_lock": "FINAL_BRRC"
+ }
+}
